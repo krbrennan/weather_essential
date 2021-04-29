@@ -34,6 +34,7 @@ const SearchAndDaily = () => {
     const getWeatherByZip = async(e) => {
         e.preventDefault()
         // randomness
+        // extra random
 
         // https://maps.googleapis.com/maps/api/geocode/json?address=18020&key=AIzaSyCaODk6-70vzIOmaWZ4nTZE6maPGq1nmjU
 
