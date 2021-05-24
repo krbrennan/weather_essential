@@ -35,7 +35,7 @@ const SearchAndDaily = () => {
         e.preventDefault()
         // randomness
         // extra random
-
+        // yes
         // https://maps.googleapis.com/maps/api/geocode/json?address=18020&key=AIzaSyCaODk6-70vzIOmaWZ4nTZE6maPGq1nmjU
 
         // need to use zipcode to get lat and long coordinates in order to do a onecall for all weather data
