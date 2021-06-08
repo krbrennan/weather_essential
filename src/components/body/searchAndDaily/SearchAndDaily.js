@@ -33,6 +33,7 @@ const SearchAndDaily = () => {
 
     const getWeatherByZip = async(e) => {
         e.preventDefault()
+        // randomness
 
         // https://maps.googleapis.com/maps/api/geocode/json?address=18020&key=AIzaSyCaODk6-70vzIOmaWZ4nTZE6maPGq1nmjU
 
@@ -42,6 +43,7 @@ const SearchAndDaily = () => {
             const jsonData = await response.json()
             const latitude = jsonData.results[0].geometry.location.lat
             const longitude = jsonData.results[0].geometry.location.lng
+            console.log(jsonData.results[0])
             setCity(jsonData.results[0].formatted_address)
 
             const openWeather = await fetch(`http://api.openweathermap.org/data/2.5/onecall?&lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_WEATHER_API_KEY}&units=imperial`)
