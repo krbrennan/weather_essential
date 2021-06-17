@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+.body {
+  /* max-width: 90vw; */
+  /* display: flex; */
+  /* height: 85vh; */
+  padding-bottom: 2em;
+}
+
+@media screen and (min-width: 900px) {
+  .body {
+    display: flex;
+    flex-direction: row;
+  }
+}
